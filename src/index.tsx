@@ -1,27 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./index.scss";
-import Home from "./pages/Home/Home";
-import List from "./pages/List/List";
-import NewList from "./pages/NewList/NewList";
+// import Home from "./pages/Home/Home";
+// import List from "./pages/List/List";
+// import NewList from "./pages/NewList/NewList";
 import SecretSanta from "./pages/SecretSanta/SecretSanta";
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Home />,
+  // },
+  // {
+  //   path: "/list",
+  //   element: <List />,
+  // },
+  // {
+  //   path: "/newlist",
+  //   element: <NewList />,
+  // },
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/list",
-    element: <List />,
-  },
-  {
-    path: "/newlist",
-    element: <NewList />,
-  },
-  {
-    path: "/special",
     element: <SecretSanta />,
   },
   {

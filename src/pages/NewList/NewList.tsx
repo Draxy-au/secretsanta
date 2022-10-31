@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PeopleForm from "../../components/People/PeopleForm";
+import { db_CreateNewList } from "../db/addList";
 
 import "./newList.scss";
 
@@ -20,6 +21,7 @@ const NewList = () => {
     event.preventDefault();
     //Just add to Database
     //Open People Form
+    db_CreateNewList(listName);
     setAddPeople(true);
   };
 
